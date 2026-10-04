@@ -1,0 +1,328 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stylianos Apostolou — Aerospace Engineering Portfolio</title><meta name="description" content="Aerospace engineering portfolio of Stylianos Apostolou: hybrid-electric power and thermal management, wing dynamics and aeroelasticity, cryogenic LH2 structures, electric propulsion."><link rel="stylesheet" href="style.css"></head><body>
+<div class="shell"><nav><b>SA / AEROSPACE</b><span class="navtitle" id="navtitle">Cover</span><span class="navright"><a class="navbtn" href="Stylianos_Apostolou_Portfolio.pdf" target="_blank" rel="noopener">PDF</a><button class="navbtn" id="tocbtn" aria-expanded="false" aria-controls="toc">CONTENTS</button><span id="counter">01 / 11</span></span></nav><main id="book">
+
+<!-- 01 COVER -->
+<section class="page active hero x" aria-label="Cover"><canvas id="hero" aria-hidden="true"></canvas>
+<div class="herocopy">
+<p class="kicker">AEROSPACE ENGINEERING PORTFOLIO · 2026</p>
+<h1>STYLIANOS<br>APOSTOLOU</h1>
+<p class="role">AEROSPACE ENGINEER</p>
+<p class="lead">Propulsion · Multidisciplinary Modelling · Advanced Aircraft Systems</p>
+<ul class="tags"><li>Hybrid-Electric Propulsion</li><li>Thermal Management</li><li>Aeroelasticity</li><li>Cryogenic Structures</li><li>Electric Propulsion</li></ul>
+</div>
+<div class="edu">
+<div><p class="lbl cy">Imperial College London</p><p>MSc Advanced Aeronautical Engineering<br><span>2026 – 2027</span></p></div>
+<div><p class="lbl cy">University of Patras</p><p>Diploma in Aeronautical Engineering<br><span>Integrated Master's · final grade <b>8.47 / 10</b></span></p></div>
+</div>
+<div class="hint">CLICK / → TO TURN THE PAGE</div></section>
+
+<!-- 02 PROFILE -->
+<section class="page x" aria-label="Engineering profile"><div class="wrap">
+<p class="kicker">ENGINEERING PROFILE</p>
+<h2>Physics-based modelling across propulsion, flow and structures.</h2>
+<p class="sub">Turning coupled physical systems into computational models, design trade-offs and engineering decisions.</p>
+<div class="g-profile">
+<div class="panel summary"><p class="lbl">Professional summary</p>
+<p>Aerospace Engineer pursuing an MSc in Advanced Aeronautical Engineering at Imperial College London, with project experience in hybrid-electric propulsion, aircraft thermal management, structural dynamics, aeroelasticity and lightweight structural design.</p>
+<p>My work uses physics-based computational modelling to study multidisciplinary aerospace systems, quantify design trade-offs and turn simulation results into engineering decisions.</p>
+<ul class="chips2"><li>MATLAB</li><li>Simulink</li><li>Python</li><li>Numerical methods</li><li>System modelling</li><li>FE modelling</li></ul></div>
+<div class="comp">
+<article><h3>Propulsion &amp; energy</h3><p>Hybrid-electric propulsion · aircraft thermal management · electric propulsion · cryogenic &amp; hydrogen systems.</p></article>
+<article><h3>Modelling &amp; simulation</h3><p>MATLAB/Simulink · dynamic systems · numerical integration · state-space methods · parametric analysis.</p></article>
+<article><h3>Aerospace analysis</h3><p>Aerodynamics · structural dynamics · aeroelasticity · heat transfer · fluid mechanics.</p></article>
+<article><h3>Engineering design</h3><p>System-level trade studies · lightweight sizing · mission-based analysis · literature synthesis.</p></article>
+</div>
+</div>
+<p class="lbl cy work-lbl">Selected work</p>
+<div class="work">
+<button data-go="2"><span class="wn">01</span><span class="wt">Integrated power &amp; thermal management of a hybrid-electric regional aircraft</span><span class="wm">Diploma thesis · 2026 · sole author</span><span class="wr">−71.35% pump energy</span></button>
+<button data-go="5"><span class="wn">02</span><span class="wt">Dynamic &amp; aeroelastic analysis of an aircraft wing</span><span class="wm">Course project · 2025–26 · team of two</span><span class="wr">363 × 363 FE model</span></button>
+<button data-go="6"><span class="wn">03</span><span class="wt">Lightweight design of a cryogenic LH₂ pressure vessel</span><span class="wm">Course project · team of two</span><span class="wr">134,640 designs searched</span></button>
+<button data-go="7"><span class="wn">04</span><span class="wt">Holistic thermal management in more- and hybrid-electric aircraft</span><span class="wm">Research project · 2025 · sole author</span><span class="wr">79-page review</span></button>
+</div>
+</div></section>
+
+<!-- 03 THESIS PROBLEM -->
+<section class="page x" aria-label="Diploma thesis: the problem"><div class="wrap">
+<p class="kicker">01 / DIPLOMA THESIS · THE PROBLEM</p>
+<h2>Integrated Power &amp; Thermal Management for a Hybrid-Electric Regional Aircraft</h2>
+<p class="meta">Diploma thesis, 2026 · Laboratory of Thermal Engines, University of Patras · Supervisor: Assoc. Prof. T. Nikolaidis · sole author · MATLAB/Simulink</p>
+<div class="g-thesis">
+<div class="stack">
+<div class="panel"><p class="lbl">The question</p>
+<p>Electrifying a regional turboprop pushes hundreds of kilowatts through motors, inverters, converters and batteries. Each component has its own temperature limit and mission-dependent heat load, and every watt of cooling costs pump power, mass and ram-air drag.</p>
+<p class="q">Which combination of cooling technologies keeps every component within its limit, over a real mission, for the least energy?</p></div>
+<div class="panel"><p class="lbl">Design case</p>
+<dl class="dl">
+<dt>Aircraft</dt><dd>ATR 72-class, parallel hybrid</dd>
+<dt>Why parallel</dt><dd>EPS mass 896 kg vs 1,720 kg for series</dd>
+<dt>Electric drive</dt><dd>500 kW motor · 600 kW inverter</dd>
+<dt>Battery</dt><dd>263 kWh at 400 Wh/kg</dd>
+<dt>Mission</dt><dd>351 km · cruise 5,182 m, M 0.42</dd>
+<dt>Ambient</dt><dd>ISA, hot/cold day (±15 °C)</dd>
+</dl></div>
+</div>
+<figure class="panel arch2"><p class="lbl cy">Thermal architecture modelled</p>
+<div class="svgwrap"><svg viewBox="0 0 720 362" role="img" aria-label="Three liquid cooling loops rejecting heat to a shared ram-air duct">
+<defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="context-stroke"/></marker></defs>
+<g class="loop mi" transform="translate(120 0)">
+<text class="lt" x="0" y="20">Motor–inverter loop</text><text class="ls" x="0" y="37">Therminol 66</text>
+<rect class="bx" x="-70" y="54" width="140" height="34" rx="8"/><text class="bt" x="0" y="76">Pump / tank</text>
+<rect class="bx hot" x="-70" y="112" width="140" height="44" rx="8"/><text class="bt" x="0" y="131">Inverter</text><text class="bs" x="0" y="147">limit 150 °C</text>
+<rect class="tag" x="26" y="118" width="38" height="15" rx="4"/><text class="tt" x="45" y="129">JET</text>
+<rect class="bx" x="-70" y="178" width="140" height="44" rx="8"/><text class="bt" x="0" y="197">Motor</text><text class="bs" x="0" y="213">limit 220 °C</text>
+<rect class="bx hx" x="-70" y="244" width="140" height="40" rx="8"/><text class="bt" x="0" y="269">HX1 · T66–air</text>
+<path class="fl" d="M0 88V110M0 156V176M0 222V242"/><path class="fl" d="M70 264H92V71H72"/><path class="air" d="M-20 284V312M20 284V312"/>
+</g>
+<g class="loop gt" transform="translate(360 0)">
+<text class="lt" x="0" y="20">Gas-turbine loop</text><text class="ls" x="0" y="37">Engine oil</text>
+<rect class="bx" x="-70" y="54" width="140" height="34" rx="8"/><text class="bt" x="0" y="76">Pump / tank</text>
+<rect class="bx" x="-70" y="112" width="140" height="44" rx="8"/><text class="bt" x="0" y="139">Generator</text>
+<rect class="bx" x="-70" y="178" width="140" height="44" rx="8"/><text class="bt" x="0" y="205">Gearbox / bearings</text>
+<rect class="bx hx" x="-70" y="244" width="140" height="40" rx="8"/><text class="bt" x="0" y="269">HX2 · oil–air</text>
+<path class="fl" d="M0 88V110M0 156V176M0 222V242"/><path class="fl" d="M70 264H92V71H72"/><path class="air" d="M-20 284V312M20 284V312"/>
+</g>
+<g class="loop bc" transform="translate(600 0)">
+<text class="lt" x="0" y="20">Battery–converter loop</text><text class="ls" x="0" y="37">Propylene-glycol / water</text>
+<rect class="bx" x="-70" y="54" width="140" height="34" rx="8"/><text class="bt" x="0" y="76">Pump / tank</text>
+<rect class="bx" x="-70" y="112" width="140" height="44" rx="8"/><text class="bt" x="0" y="131">Battery</text><text class="bs" x="0" y="147">limit 45 °C</text>
+<rect class="tag" x="26" y="118" width="38" height="15" rx="4"/><text class="tt" x="45" y="129">PCM</text>
+<rect class="bx" x="-70" y="178" width="140" height="44" rx="8"/><text class="bt" x="0" y="197">Converter</text><text class="bs" x="0" y="213">limit 150 °C</text>
+<rect class="tag" x="26" y="184" width="38" height="15" rx="4"/><text class="tt" x="45" y="195">PCM</text>
+<rect class="bx hx" x="-70" y="244" width="140" height="40" rx="8"/><text class="bt" x="0" y="269">HX3 · PGW–air</text>
+<path class="fl" d="M0 88V110M0 156V176M0 222V242"/><path class="fl" d="M70 264H92V71H72"/><path class="air" d="M-20 284V312M20 284V312"/>
+</g>
+<rect class="duct" x="10" y="312" width="700" height="34" rx="8"/><text class="dt" x="26" y="334">RAM-AIR INTAKE  →  heat sink for HX1 · HX2 · HX3</text>
+</svg></div>
+<figcaption class="caption2">Coolant flows pump → components → heat exchanger and back. <b class="o">PCM</b> (n-octadecane) buffers the battery and converter; a <b class="o">jet-impingement</b> plate targets the inverter. The DC bus is air-cooled directly.</figcaption>
+</figure>
+</div>
+</div></section>
+
+<!-- 04 THESIS METHOD -->
+<section class="page x" aria-label="Diploma thesis: method and validation"><div class="wrap">
+<p class="kicker">01 / DIPLOMA THESIS · METHOD</p>
+<h2>A mission-driven model, checked before it was trusted.</h2>
+<p class="sub">Electrical losses become heat loads; heat loads become coolant flow, pressure drop and pump energy at each of 705 mission time steps.</p>
+<ol class="pipe">
+<li><b>Mission profile</b><span>Shaft power per phase · ambient temperature</span></li>
+<li><b>Power split &amp; sizing</b><span>Engine at cruise power · EPS covers the gap</span></li>
+<li><b>Loss models</b><span>Motor · inverter · converter · bus · battery</span></li>
+<li><b>Thermal logic</b><span>Passive first → PCM buffer → active loop</span></li>
+<li><b>Hydraulics</b><span>Mass flow · ΔP · pump power</span></li>
+<li class="end"><b>Metric</b><span>Integrated pump energy within thermal limits</span></li>
+</ol>
+<div class="g-method">
+<div class="stack"><p class="lbl">Validation vs reference data</p>
+<div class="val"><strong>≤ 4%</strong><span>Motor efficiency error vs reference machine; ≈ 1.5% at high power</span></div>
+<div class="val"><strong>≤ 0.45%</strong><span>Inverter efficiency error vs reference model</span></div>
+<div class="val"><strong>0.17%</strong><span>SFC error of the gas-turbine model vs PW127 (pressure ratio 0.13%)</span></div>
+</div>
+<figure class="panel chart"><p class="lbl">Sizing study · more PCM is not better</p>
+<div class="svgwrap"><svg viewBox="0 0 520 250" role="img" aria-label="BC-loop pump energy rises from 992 kJ at 20 kg of battery PCM to 1162 kJ at 60 kg">
+<g class="grid"><path d="M60 211H500M60 170H500M60 129H500M60 88H500M60 47H500"/></g>
+<g class="ax"><text x="52" y="215">980</text><text x="52" y="174">1,020</text><text x="52" y="133">1,060</text><text x="52" y="92">1,100</text><text x="52" y="51">1,140</text>
+<text class="xt" x="90" y="234">20</text><text class="xt" x="190" y="234">30</text><text class="xt" x="290" y="234">40</text><text class="xt" x="390" y="234">50</text><text class="xt" x="490" y="234">60</text></g>
+<text class="axl" x="290" y="249">battery PCM mass [kg]</text>
+<text class="axl" transform="translate(12 130) rotate(-90)">BC-loop pump energy [kJ]</text>
+<path class="area" d="M90 199 L190 112 L290 73 L390 47 L490 25 L490 211 L90 211Z"/>
+<path class="ln" d="M90 199 L190 112 L290 73 L390 47 L490 25"/>
+<g class="pts"><circle cx="90" cy="199" r="5"/><circle cx="190" cy="112" r="4"/><circle cx="290" cy="73" r="4"/><circle cx="390" cy="47" r="4"/><circle cx="490" cy="25" r="5"/></g>
+<g class="pl"><text x="100" y="196">992</text><text x="200" y="118">1,077</text><text x="300" y="80">1,115</text><text x="380" y="40" text-anchor="end">1,140</text><text x="482" y="16" text-anchor="end" class="hl">1,162 kJ (+17%)</text></g>
+</svg></div></figure>
+<div class="stack">
+<div class="note"><p class="lbl">Design finding</p><p>Tripling battery PCM from 20 to 60 kg raised BC-loop pump energy by 17%. A thicker layer stores more latent heat but lengthens the conduction path. <b>Contact area (fins), not mass, is the design lever.</b> 20 kg per component was selected.</p></div>
+<div class="note"><p class="lbl">Control logic, every time step</p>
+<ol class="logic"><li>Passive cooling first</li><li>PCM absorbs heat until fully melted</li><li>Liquid loop runs at the smallest flow that holds the limit</li></ol></div>
+</div>
+</div>
+</div></section>
+
+<!-- 05 THESIS RESULTS -->
+<section class="page x" aria-label="Diploma thesis: results"><div class="wrap">
+<p class="kicker">01 / DIPLOMA THESIS · RESULTS</p>
+<h2>The best architecture was a mix, not the strongest technology.</h2>
+<div class="g-results">
+<div class="panel"><p class="lbl">Integrated pump energy over the mission</p>
+<div class="bars">
+<div class="bar"><span class="bn">Cold-plate baseline</span><div class="bt2"><i class="mi" style="width:67.7%"></i><i class="bc" style="width:32.3%"></i></div><span class="bv">5,082 kJ</span></div>
+<div class="bar"><span class="bn">PCM-assisted</span><div class="bt2"><i class="mi" style="width:67.7%"></i><i class="bc" style="width:19.5%"></i></div><span class="bv">4,433 kJ <em>−12.8%</em></span></div>
+<div class="bar"><span class="bn">Hybrid: PCM + jet impingement</span><div class="bt2"><i class="mi" style="width:9.1%"></i><i class="bc" style="width:19.5%"></i></div><span class="bv">1,456 kJ <em>−71.4%</em></span></div>
+</div>
+<p class="legend2"><span><i class="mi"></i>Motor–inverter loop</span><span><i class="bc"></i>Battery–converter loop</span></p>
+</div>
+<figure class="panel chart"><p class="lbl">Peak temperature vs limit</p>
+<div class="svgwrap"><svg viewBox="0 0 520 200" role="img" aria-label="Inverter peak falls from 148 to 145 °C against a 150 °C limit; motor peak rises from 143 to 207 °C against a 220 °C limit">
+<g class="grid"><path d="M110 30V160M175 30V160M240 30V160M305 30V160M370 30V160M435 30V160M500 30V160"/></g>
+<g class="ax2"><text x="110" y="180">0</text><text x="175" y="180">40</text><text x="240" y="180">80</text><text x="305" y="180">120</text><text x="370" y="180">160</text><text x="435" y="180">200</text><text x="500" y="180">240 °C</text></g>
+<text class="rn" x="98" y="69">Inverter</text>
+<path class="trk" d="M110 65H500"/><path class="lim" d="M353.8 50V80"/><text class="limt" x="353.8" y="44">limit 150</text>
+<circle class="o0" cx="350.5" cy="65" r="6"/><circle class="o1" cx="345.6" cy="65" r="6"/>
+<text class="mg" x="337" y="92" text-anchor="end">148 → 145 °C · margin 2 → 5 °C</text>
+<text class="rn" x="98" y="129">Motor</text>
+<path class="trk" d="M110 125H500"/><path class="lim" d="M467.5 110V140"/><text class="limt" x="467.5" y="104">limit 220</text>
+<path class="mv" d="M342.4 125H440"/><circle class="o0" cx="342.4" cy="125" r="6"/><circle class="o1" cx="446.4" cy="125" r="6"/>
+<text class="mg" x="446" y="152" text-anchor="end">143 → 207 °C · margin 77 → 13 °C</text>
+</svg></div>
+<p class="legend2"><span><i class="ring"></i>Before jet impingement</span><span><i class="dot"></i>Hybrid architecture</span></p>
+</figure>
+</div>
+<div class="kpis">
+<div><strong>−71.35%</strong><span>Total pump energy, hybrid vs cold-plate baseline</span></div>
+<div><strong>−54.6%</strong><span>Mean MI-loop coolant flow, 8.02 → 3.64 kg/s</span></div>
+<div><strong>−39.5%</strong><span>BC-loop pump energy from PCM integration</span></div>
+</div>
+<div class="g-trade">
+<div class="note"><p class="lbl">The trade-off</p><p>Jet impingement cut the inverter peak by 3 °C, which let the motor–inverter loop run at under half the flow. The cost was a motor peak rising from 143 °C to 207 °C, shrinking its margin to the 220 °C limit from 77 °C to 13 °C. <b>The hybrid works because it spends margin where margin exists.</b></p></div>
+<div class="fine"><p><b>Limitations.</b> Abrupt steps in some temperature traces come from the PCM/active state-tracking logic, not physics. Jet impingement is correlation-based, not CFD-resolved.</p><p><b>Next steps.</b> CFD-resolved jet impingement, spatial PCM melting, finned-PCM optimisation and adaptive flow control for real-time thermal management.</p></div>
+</div>
+</div></section>
+
+<!-- 06 WING DYNAMICS -->
+<section class="page x" aria-label="Wing dynamics and aeroelasticity"><div class="wrap">
+<p class="kicker">02 / STRUCTURAL DYNAMICS &amp; AEROELASTICITY</p>
+<h2>Dynamic &amp; Aeroelastic Analysis of an Aircraft Wing</h2>
+<p class="meta">Course project, Dynamics of Aircraft Structures 2025–26 · team of two · 8.9 m composite wing · FE beam model written in MATLAB</p>
+<div class="g-dyn">
+<div class="stack">
+<div class="panel wingpanel">
+<div class="wtop"><p class="lbl cy" id="wlabel">Engine forcing · 19.99 Hz</p><div class="seg" role="group" aria-label="Wing response">
+<button data-mode="1">Mode 1</button><button data-mode="2">Mode 2</button><button data-mode="res" class="on">Engine forcing</button><button data-mode="damp">Damped</button></div></div>
+<canvas id="wing" aria-label="Animated wing deflection"></canvas>
+<div class="trhead"><span>Tip displacement · first 6 s</span><span id="wnote">undamped, 19.99 Hz forcing</span></div>
+<canvas id="trace" aria-hidden="true"></canvas>
+<p class="fine2">Idealised cantilever shapes and a single-mode response model (damped case: illustrative ζ = 1%); frequencies from the FE model.</p>
+</div>
+<div class="panel"><p class="lbl">Aeroelastic extension</p>
+<div class="tblwrap"><table class="tbl"><thead><tr><th>Section idealisation</th><th>20 m/s</th><th>70 m/s</th></tr></thead>
+<tbody><tr><td>Closed box beam</td><td>Stable</td><td>Stable*</td></tr><tr><td>Open I-beam</td><td>Stable; much larger tip twist</td><td class="warn">Static divergence</td></tr></tbody></table></div>
+<p class="fine2">Divergence speed scales with the square root of torsional stiffness, so the structural idealisation is part of the stability prediction. *Very stiff closed-box representation; not treated as a realism claim.</p></div>
+</div>
+<div class="stack">
+<figure class="panel chart"><p class="lbl">Natural frequencies vs excitation</p>
+<div class="svgwrap"><svg viewBox="0 20 480 142" role="img" aria-label="First five natural frequencies with the 11.70 Hz and 19.99 Hz forcing frequencies">
+<path class="axis" d="M30 120H470"/>
+<g class="ax3"><text x="30" y="137">0</text><text x="134" y="137">20</text><text x="238" y="137">40</text><text x="342" y="137">60</text><text x="446" y="137">80 Hz</text></g>
+<g class="force"><path d="M90.8 120V28"/><path d="M133.9 120V28"/></g>
+<g class="stem"><path d="M46.7 120V66"/><path d="M134.9 120V42"/><path d="M164.6 120V66"/><path d="M323.3 120V66"/><path d="M433.7 120V66"/></g>
+<g class="stemc"><circle cx="46.7" cy="66" r="4.5"/><circle cx="134.9" cy="42" r="5.5"/><circle cx="164.6" cy="66" r="4.5"/><circle cx="323.3" cy="66" r="4.5"/><circle cx="433.7" cy="66" r="4.5"/></g>
+<g class="ml"><text x="46.7" y="54">Mode 1 · 3.22</text><text x="142" y="36" class="hl s">Mode 2 · 20.18</text><text x="172" y="58" class="s">Mode 3 · 25.88</text><text x="323.3" y="54">Mode 4 · 56.41</text><text x="433.7" y="54">Mode 5 · 77.64</text></g>
+<g class="fl2"><text x="87" y="155" text-anchor="end">11.70 Hz forcing</text><text x="138" y="155" text-anchor="start">19.99 Hz engine · 0.9% below mode 2</text></g>
+</svg></div></figure>
+<div class="panel"><p class="lbl">Model</p><ul class="bul">
+<li><b>120 elements</b>, chosen by convergence of the first 10 natural frequencies → 363 × 363 mass and stiffness matrices.</li>
+<li>Forced response by modal superposition, stiffness-proportional damping and complex eigensolution.</li>
+<li>Direct integration: explicit central difference vs implicit Newmark.</li></ul></div>
+<div class="note"><p class="lbl">Numerical insight</p><p>The explicit scheme's step is governed by the highest mesh frequency (78 kHz): Δt ≤ 2.6 × 10⁻⁵ s, against 0.062 s for Newmark. That is <b>roughly 2,400× more steps</b> for the same physics.</p></div>
+</div>
+</div>
+</div></section>
+
+<!-- 07 LH2 VESSEL -->
+<section class="page x" aria-label="Cryogenic LH2 pressure vessel"><div class="wrap">
+<p class="kicker">03 / LIGHTWEIGHT STRUCTURES</p>
+<h2>Lightweight Structural Design of a Cryogenic LH₂ Pressure Vessel</h2>
+<p class="meta">Course project · team of two · analytical thin-walled model and parametric sizing code in MATLAB</p>
+<div class="g-tank">
+<div class="stack">
+<div class="panel"><p class="lbl">Requirements</p>
+<dl class="dl">
+<dt>Geometry</dt><dd>L 2 m · Ø 0.25 m</dd>
+<dt>Internal pressure</dt><dd>10 bar</dd>
+<dt>Inertial loads</dt><dd>9g · 6g · 3g</dd>
+<dt>Thermal</dt><dd>LH₂ −252 °C · ambient 20 °C</dd>
+<dt>Skin</dt><dd>Al-Li 2198-T8</dd>
+<dt>Stringers</dt><dd>3 × CFRP omega</dd>
+<dt>Safety factor</dt><dd>1.6</dd>
+</dl></div>
+<div class="note"><p class="lbl">Method</p><p>N, Q, M diagrams → modulus-weighted section properties → direct stress from pressure, inertia and thermal strain → shear flow → von Mises at critical stations → mass.</p></div>
+</div>
+<figure class="panel xsec"><p class="lbl cy">Cross-section · selected design</p>
+<div class="svgwrap"><svg viewBox="0 0 340 330" role="img" aria-label="Cross-section of the tank with three omega stringers">
+<circle class="lh2" cx="170" cy="160" r="104"/>
+<circle class="skin" cx="170" cy="160" r="108"/>
+<g class="om"><path transform="translate(170 160) rotate(0)" d="M108 -26 L108 -11 L128 -9 L128 9 L108 11 L108 26"/><path transform="translate(170 160) rotate(90)" d="M108 -26 L108 -11 L128 -9 L128 9 L108 11 L108 26"/><path transform="translate(170 160) rotate(180)" d="M108 -26 L108 -11 L128 -9 L128 9 L108 11 L108 26"/></g>
+<text class="c1" x="170" y="150">LH₂ −252 °C</text><text class="c2" x="170" y="172">10 bar · 100% fill</text><text class="c3" x="170" y="190">Al-Li 2198-T8 skin · 1.0 mm</text>
+<path class="ldr" d="M170 52V30H250"/><circle class="pin" cx="170" cy="52" r="3.5"/><text class="st" x="254" y="27">σ ≈ 161 MPa</text><text class="st2" x="254" y="41">unstiffened top</text>
+<path class="ldr" d="M170 288V312H250"/><circle class="pin" cx="170" cy="288" r="3.5"/><text class="st" x="254" y="309">σ ≈ 42 MPa</text><text class="st2" x="254" y="323">at a stringer</text>
+</svg></div>
+<figcaption class="caption2">3 × CFRP omega stringers · 45 / 15 / 35 mm · 2.45 mm (7 plies)</figcaption>
+</figure>
+<div class="stack">
+<div class="tiles">
+<div><strong>134,640</strong><span>candidate geometries: 7,920 stringer shapes × 17 skin thicknesses</span></div>
+<div><strong>1.623</strong><span>critical FoS (skin), 1.4% above the 1.6 target</span></div>
+<div><strong>2.79</strong><span>stringer FoS at the selected design</span></div>
+<div><strong>≈ 8.2 kg</strong><span>corrected structural mass, carrying ≈ 7.6 kg LH₂</span></div>
+</div>
+<div class="note"><p class="lbl">What sized it: temperature, not pressure</p>
+<p>Across a 272 K drop the aluminium skin wants to shrink while the CFRP barely moves. The skin ends up in tension and the stringers in compression.</p>
+<div class="strain" aria-label="Free thermal contraction over the 2 m length">
+<div><span>Al-Li skin</span><i class="al" style="width:100%"></i><b>−11.4 mm</b></div>
+<div><span>CFRP stringer</span><i class="cf" style="width:2.4%"></i><b>+0.3 mm</b></div>
+</div>
+<p class="fine2">Free thermal strain over the 2 m length (α = 21 vs −0.5 × 10⁻⁶ /°C).</p></div>
+</div>
+</div>
+<p class="audit"><b>Sizing-script audit.</b> The original end-cap mass term missed a factor of π. Corrected structural mass is ≈ 8.21 kg, not the originally reported 7.85 kg. The selected design also sits at the edge of the search grid, which motivates a wider stringer range.</p>
+</div></section>
+
+<!-- 08 RESEARCH FOUNDATION -->
+<section class="page x" aria-label="Research foundation"><div class="wrap">
+<p class="kicker">04 / RESEARCH FOUNDATION</p>
+<h2>From literature review to thesis question.</h2>
+<div class="g-res">
+<div class="stack">
+<div class="rhead"><p class="lbl">Research project · 2025 · sole author</p>
+<h3>Holistic thermal management in more-electric and hybrid-electric aircraft: challenges, solutions and future trends</h3>
+<p class="meta">Laboratory of Thermal Engines, University of Patras · Supervisor: Assoc. Prof. T. Nikolaidis · 79 pages</p></div>
+<div class="rrows">
+<div><b>Heat sources</b><p>Motors, power electronics, batteries, generators and avionics; how electrification turns steady central loads into distributed, transient ones.</p></div>
+<div><b>Technologies</b><p>Cold plates, PCM, jet impingement, spray cooling, heat pipes and compact heat exchangers, including additively manufactured designs.</p></div>
+<div><b>Integration</b><p>Hydrogen and SAF as heat sinks, fuel-system coupling, and trade-offs in mass, drag, reliability and certifiability.</p></div>
+<div class="gap"><b>Gap found → thesis</b><p>Few studies link integrated power-and-thermal models to a real mission profile. The diploma thesis was built to close that gap.</p></div>
+</div>
+</div>
+<div class="stack">
+<p class="lbl cy">Research path</p>
+<ol class="tl">
+<li><time>2021</time><div><b>University of Patras</b><p>Diploma in Aeronautical Engineering begins (5-year, Integrated Master's).</p></div></li>
+<li><time>2025</time><div><b>Literature review</b><p>Holistic thermal management in more- and hybrid-electric aircraft.</p></div></li>
+<li><time>2025–26</time><div><b>Structures &amp; dynamics projects</b><p>FE wing dynamics and aeroelasticity; cryogenic LH₂ vessel sizing.</p></div></li>
+<li><time>2026</time><div><b>Diploma thesis</b><p>Integrated power &amp; thermal management model. Diploma awarded, 8.47 / 10.</p></div></li>
+<li class="now"><time>2026–27</time><div><b>Imperial College London</b><p>MSc Advanced Aeronautical Engineering. Next: electric propulsion and plasma diagnostics.</p></div></li>
+</ol>
+<div class="note"><p class="lbl">Looking for</p><p>Research and R&amp;D roles in propulsion, thermal management and aircraft-systems modelling, where simulation feeds directly into design decisions.</p></div>
+</div>
+</div>
+</div></section>
+
+<!-- 09 TOOLKIT -->
+<section class="page x" aria-label="Engineering toolkit"><div class="wrap">
+<p class="kicker">ENGINEERING TOOLKIT</p>
+<h2>Tools, methods and technical foundation.</h2>
+<div class="g-tool">
+<div class="tcol"><p class="lbl">Programming</p>
+<dl class="lv">
+<dt>MATLAB</dt><dd>Advanced · all projects</dd>
+<dt>Simulink</dt><dd>System modelling · thesis</dd>
+<dt>Python</dt><dd>Engineering / scientific computing</dd>
+<dt>C</dt><dd>Programming fundamentals</dd>
+<dt>C++</dt><dd>Introductory</dd>
+</dl></div>
+<div class="tcol"><p class="lbl">Modelling &amp; simulation</p><p>MATLAB · Simulink · dynamic system modelling · numerical integration · state-space analysis · parametric optimisation.</p>
+<p class="lbl l2">Engineering methods</p><p>Finite-element modelling · modal analysis · parametric design · mission-based simulation · system-level trade studies · technical literature synthesis.</p></div>
+<div class="tcol"><p class="lbl">Aerospace engineering</p><p>Aerodynamics · fluid mechanics · heat transfer · thermal management · structural dynamics · aeroelasticity · stress analysis.</p>
+<p class="lbl l2">Engineering software</p><p>AutoCAD · Autodesk Fusion 360 · MATLAB/Simulink environment · scientific Python workflows.</p></div>
+</div>
+<div class="edurow">
+<div><p class="lbl cy">Imperial College London</p><b>MSc Advanced Aeronautical Engineering</b><span>2026 – 2027 · Turbulence &amp; turbulence modelling · Applied aerodynamics · Fundamentals of scientific ML · Emerging technology for green aviation</span></div>
+<div><p class="lbl cy">University of Patras</p><b>Diploma in Aeronautical Engineering</b><span>5-year Integrated Master's level · 2021 – 2026 · final grade 8.47 / 10</span></div>
+</div>
+</div></section>
+
+<section class="page plasma"><div class="split"><div class="copy"><p class="kicker">CURRENT RESEARCH FOCUS / ELECTRIC PROPULSION</p><h2>Xenon ionisation & electrostatic acceleration.</h2><p class="lead">A cinematic conceptual visualisation of electron-impact ionisation — deliberately clearer than V1, while remaining a visual explanation rather than a PIC simulation.</p><div class="eq">e⁻ + Xe → Xe⁺ + 2e⁻</div><p>Neutral xenon enters the discharge region. Fast electrons cross the neutral flow; selected close encounters trigger a visible ionisation event. The resulting Xe⁺ ion then responds to the electric field and accelerates into the plume.</p><div class="legend"><span>○ Xe</span><span>• e⁻</span><span>⊕ Xe⁺</span><span>→ E-field</span></div></div><div class="plasmastage"><canvas id="plasma"></canvas><div class="field">ELECTRIC FIELD →</div></div></div></section>
+<section class="page end"><div class="copy wide"><p class="kicker">CURRENTLY AT IMPERIAL COLLEGE LONDON</p><h2>Advanced Aeronautical Engineering</h2><div class="three"><article><h3>ADVANCED AERODYNAMICS</h3><p>Viscous-flow behaviour and aircraft aerodynamic analysis.</p></article><article><h3>TURBULENCE</h3><p>Turbulent-flow physics and modelling approaches.</p></article><article><h3>SCIENTIFIC ML</h3><p>Data-driven methods for physical systems.</p></article></div><div class="contact"><h2>STYLIANOS APOSTOLOU</h2><p>Aerospace Engineer · London, UK</p><p>Propulsion · Modelling · Multidisciplinary Aerospace Systems</p></div></div></section>
+</main><button id="prev" class="turn left" aria-label="Previous page">‹</button><button id="next" class="turn right" aria-label="Next page">›</button><div class="dots" id="dots"></div>
+<div class="toc" id="toc" hidden><div class="tocin"><p class="kicker">CONTENTS</p><ol id="toclist"></ol></div></div>
+</div><script src="app.js"></script></body></html>
